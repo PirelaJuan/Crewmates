@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import amongusgif from '../assets/amongusDif.gif';
 import '../App.css';
 
 function SideBar() {
@@ -12,13 +13,17 @@ function SideBar() {
          </div>
           
           <div className='Menu-select'>
-            <a href='/create'>Create</a>
+            <a href='/create'>Create a new Crewmate</a>
           </div >
           
           <div className='Menu-select'>
-             <a href='/gallery'>Gallery</a>
+             <a href='/gallery'> Crewmate Gallery</a>
           </div>
       </div>
+      <div className='gif'>
+        <img src={amongusgif} />
+      </div>
+        
     </div>
   );
 }
